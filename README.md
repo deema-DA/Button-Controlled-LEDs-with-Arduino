@@ -23,5 +23,5 @@ When a button is pressed, the corresponding LED lights up. When released, the LE
 - Second leg connected to Arduino pins 2, 3, 4.
 - Same leg also connected to GND through a 10kΩ pull-down resistor.
   LEDs:
-- Anode (long leg) connected to Arduino pins 8, 9, 10 via 220Ω resistors.
-- Cathode (short leg) connected to GND.
+- Anode connected to Arduino pins 8, 9, 10 via 220Ω resistors.
+- Cathode  connected to GND.
