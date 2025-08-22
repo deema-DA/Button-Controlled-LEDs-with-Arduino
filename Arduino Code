@@ -1,0 +1,46 @@
+// Button pins
+const int button1 = 2;
+const int button2 = 3;
+const int button3 = 4;
+// LED pins
+const int led1 = 8;
+const int led2 = 9;
+const int led3 = 10;
+// Variables to store button states
+int buttonState1 = 0;
+int buttonState2 = 0;
+int buttonState3 = 0;
+void setup() {
+// Inputs
+pinMode(button1, INPUT);
+pinMode(button2, INPUT);
+pinMode(button3, INPUT);
+// Outputs
+pinMode(led1, OUTPUT);
+pinMode(led2, OUTPUT);
+pinMode(led3, OUTPUT);
+}
+void loop() {
+// Read buttons
+buttonState1 = digitalRead(button1);
+buttonState2 = digitalRead(button2);
+buttonState3 = digitalRead(button3);
+// Button 1 → LED 1
+if (buttonState1 == HIGH) {
+digitalWrite(led1, HIGH);
+} else {
+digitalWrite(led1, LOW);
+}
+// Button 2 → LED 2
+if (buttonState2 == HIGH) {
+digitalWrite(led2, HIGH);
+} else {
+digitalWrite(led2, LOW);
+}
+// Button 3 → LED 3
+if (buttonState3 == HIGH) {
+digitalWrite(led3, HIGH);
+} else {
+digitalWrite(led3, LOW);
+}
+}
